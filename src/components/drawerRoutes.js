@@ -2,30 +2,11 @@ import React, { useState } from 'react';
 
 import { ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import DescriptionIcon from '@material-ui/icons/Description';
-import PersonIcon from '@material-ui/icons/Person';
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import List from '@material-ui/core/List';
-import Collapse from '@material-ui/core/Collapse';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
-import StarBorder from '@material-ui/icons/StarBorder';
-
-
 import DonutSmallIcon from '@material-ui/icons/DonutSmall';
 import PeopleIcon from '@material-ui/icons/People';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import ForumIcon from '@material-ui/icons/Forum';
 import DateRangeIcon from '@material-ui/icons/DateRange';
-import TrendingUpIcon from '@material-ui/icons/TrendingUp';
-import SearchIcon from '@material-ui/icons/Search';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({

@@ -15,7 +15,6 @@ import {
   Container,
   Menu,
   MenuItem,
-  Avatar,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -137,13 +136,6 @@ const AuthRoutes = props => {
   };
   const handleDrawerClose = () => {
     setOpen(false);
-  };
-
-  const handleLoaderOnSmall = () => {
-    setLoader(true);
-    setTimeout(() => {
-      setLoader(false);
-    }, 1000);
   };
 
   //Logout Dropdown

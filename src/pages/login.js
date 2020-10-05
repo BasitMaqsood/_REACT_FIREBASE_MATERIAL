@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Joi from 'joi-browser';
 import {
   Avatar,
   Button,
@@ -58,18 +57,7 @@ const useStyles = makeStyles(theme => ({
 export default function SignIn(props) {
   let ref = React.useRef();
   const classes = useStyles();
-  const [login, setlogin] = useState('');
-  const [password, setpassword] = useState('');
-  const [error, setError] = useState({});
   const [disabled, setDisabled] = useState(false);
-
-
-
-  const handleChanage = ({ target: { id: key, value } }) => {
-
-    eval('set' + key + '(value)');
-
-  };
 
   const handleSignIn = async () => {
 
@@ -103,7 +91,6 @@ export default function SignIn(props) {
             name="login"
             autoComplete="login"
             autoFocus
-            onChange={handleChanage}
           />
           <TextField
             variant="outlined"
@@ -115,7 +102,6 @@ export default function SignIn(props) {
             type="password"
             id="password"
             autoComplete="current-password"
-            onChange={handleChanage}
           />
           <Button
             fullWidth
